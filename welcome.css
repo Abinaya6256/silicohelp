@@ -1,0 +1,171 @@
+.welcome-container{
+
+    min-height:100vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:flex-start;
+
+    align-items:center;
+
+    padding-top:60px;
+
+    background:linear-gradient(135deg,#F8FAFC,#EAF6FF);
+
+    text-align:center;
+
+}
+
+.welcome-logo{
+
+    width:170px;
+
+    margin-bottom:25px;
+
+}
+
+.welcome-container h1{
+
+    color:var(--primary);
+
+    font-size:2.4rem;
+
+    margin-bottom:15px;
+
+}
+
+.tagline{
+
+    max-width:650px;
+
+    color:var(--light-text);
+
+    line-height:1.8;
+
+    margin-bottom:35px;
+
+}
+
+.welcome-card{
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:20px;
+
+    width:100%;
+
+    max-width:600px;
+
+    box-shadow:var(--shadow);
+
+}
+
+.welcome-card h2{
+
+    margin-bottom:15px;
+
+}
+
+.welcome-card p{
+
+    color:var(--light-text);
+
+    margin-bottom:30px;
+
+    line-height:1.7;
+
+}
+
+.start-btn{
+
+    width:100%;
+
+    padding:18px;
+
+    background:var(--primary);
+
+    color:white;
+
+    border:none;
+
+    border-radius:16px;
+
+    font-size:18px;
+
+    cursor:pointer;
+
+    margin-bottom:18px;
+
+}
+
+.login-btn{
+
+    width:100%;
+
+    padding:18px;
+
+    background:white;
+
+    color:var(--primary);
+
+    border:2px solid var(--primary);
+
+    border-radius:16px;
+
+    font-size:18px;
+
+    cursor:pointer;
+
+}
+
+.status-card{
+
+    margin-top:30px;
+
+    background:white;
+
+    padding:20px;
+
+    border-radius:16px;
+
+    width:100%;
+
+    max-width:600px;
+
+    box-shadow:var(--shadow);
+
+}
+
+.status-card p{
+
+    margin:10px 0;
+
+}
+.start-btn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 12px 30px rgba(37,99,235,.25);
+
+}
+
+.login-btn:hover{
+
+    background:#EFF6FF;
+
+}
+.status-card{
+
+    margin-bottom:50px;
+
+}
+
+.status-card p{
+
+    font-size:17px;
+
+}

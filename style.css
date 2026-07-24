@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@400;500;600;700&display=swap');
+:root{
+
+    /* Colors */
+
+    --primary:#2563EB;
+    --secondary:#06B6D4;
+    --success:#22C55E;
+    --warning:#F59E0B;
+    --danger:#EF4444;
+
+    --background:#F8FAFC;
+    --card:#FFFFFF;
+
+    --text:#1E293B;
+    --light-text:#64748B;
+
+    /* Radius */
+
+    --radius-small:12px;
+    --radius-medium:16px;
+    --radius-large:20px;
+
+    /* Shadow */
+
+    --shadow:0 8px 24px rgba(0,0,0,0.08);
+
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+
+    font-family:'Inter',sans-serif;
+
+    background:var(--background);
+
+    color:var(--text);
+
+    min-height:100vh;
+
+}
+h1,h2,h3,h4{
+
+    font-family:'Poppins',sans-serif;
+
+    font-weight:600;
+
+}
+.container{
+
+    width:90%;
+
+    max-width:420px;
+
+    margin:auto;
+
+}
+/* ===========================
+   BUTTONS
+=========================== */
+
+.btn{
+
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+
+    width:100%;
+
+    padding:15px 20px;
+
+    border:none;
+
+    border-radius:16px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    font-family:'Poppins',sans-serif;
+
+    transition:.3s;
+}
+
+.btn-primary{
+
+    background:var(--primary);
+
+    color:white;
+}
+
+.btn-primary:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:var(--shadow);
+
+}
+/* ===========================
+   CARD
+=========================== */
+
+.card{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:25px;
+
+    box-shadow:var(--shadow);
+
+    margin:20px 0;
+
+}
+/* ===========================
+   INPUT
+=========================== */
+
+.input{
+
+    width:100%;
+
+    padding:15px;
+
+    border:1px solid #d9e2ec;
+
+    border-radius:14px;
+
+    margin-top:8px;
+
+    font-size:15px;
+
+    outline:none;
+
+}
+
+.input:focus{
+
+    border-color:var(--primary);
+
+}
+.logo{
+
+    width:90px;
+
+    margin:auto;
+
+    display:block;
+
+}
+.page-title{
+
+    text-align:center;
+
+    margin-top:20px;
+
+    margin-bottom:8px;
+
+}
+.subtitle{
+
+    text-align:center;
+
+    color:var(--light-text);
+
+    margin-bottom:25px;
+
+}
+/* ===============================
+   SPLASH SCREEN
+================================ */
+
+.splash-container{
+
+    min-height:100vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:flex-start;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding-top:80px;
+
+    background:linear-gradient(135deg,#F8FAFC 0%,#E0F2FE 100%);
+
+}
+
+.logo{
+
+    width:170px;
+
+    margin-bottom:20px;
+
+}
+
+.app-name{
+
+    font-size:3.5rem;
+
+    font-family:'Poppins',sans-serif;
+
+    font-weight:700;
+
+    color:var(--primary);
+
+}
+
+.tagline{
+
+    max-width:650px;
+
+    margin-top:18px;
+
+    font-size:1.15rem;
+
+    color:var(--text);
+
+}
+
+.motto{
+
+    margin-top:25px;
+
+    color:var(--primary);
+
+    font-size:1.6rem;
+
+}
+
+.welcome-text{
+
+    margin-top:20px;
+
+    max-width:700px;
+
+    color:var(--light-text);
+
+    line-height:1.8;
+
+}
+
+.loading{
+
+    margin-top:45px;
+
+    font-size:18px;
+
+    color:var(--primary);
+
+    font-weight:600;
+
+}
+/* ===============================
+   ANIMATIONS
+================================ */
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(-20px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+.logo-container,
+.app-name,
+.tagline,
+.motto,
+.welcome-text,
+.loading{
+
+    animation:fadeIn 1s ease forwards;
+
+}
+.dots::after{
+
+    content:"";
+
+    animation:dots 1.5s infinite;
+
+}
+
+@keyframes dots{
+
+    0%{content:"";}
+
+    25%{content:".";}
+
+    50%{content:"..";}
+
+    75%{content:"...";}
+
+    100%{content:"";}
+
+}
