@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Government Dashboard | SilicoHelp</title>
+
+<link rel="stylesheet" href="../css/govdashboard.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="layout">
+
+<!-- Sidebar -->
+
+<aside class="sidebar">
+
+<div class="logo-section">
+
+<img src="../assets/logo/silicohelp-logo.png" class="logo">
+
+</div>
+
+<nav>
+
+<a href="govdashboard.html" class="active">
+
+    <i class="fa-solid fa-house"></i>
+
+    Dashboard
+
+</a>
+
+<a href="govclaims.html">
+    <i class="fa-solid fa-file-circle-check"></i>
+    Claims
+</a>
+
+<a href="analytics.html" class="active">
+
+    <i class="fa-solid fa-chart-line"></i>
+
+    Analytics
+
+</a>
+
+<a href="splash.html" class="logout">
+
+    <i class="fa-solid fa-right-from-bracket"></i>
+
+    Logout
+</a>
+
+</nav>
+
+</aside>
+
+<!-- Main -->
+
+<main class="content">
+
+<header class="topbar">
+    
+
+<div>
+
+<h1>Government Dashboard</h1>
+
+<p>
+
+Labour Department Monitoring Portal
+
+</p>
+
+</div>
+
+</header>
+<!-- Statistics Cards -->
+
+<section class="stats-grid">
+
+    <div class="stat-card">
+
+        <i class="fa-solid fa-users"></i>
+
+        <h3>Total Workers</h3>
+
+        <h2 id="totalWorkers">1,254</h2>
+
+    </div>
+
+    <div class="stat-card">
+
+        <i class="fa-solid fa-file-circle-check"></i>
+
+        <h3>Approved Claims</h3>
+
+        <h2 id="approvedClaims">156</h2>
+
+    </div>
+
+    <div class="stat-card">
+
+        <i class="fa-solid fa-clock"></i>
+
+        <h3>Pending Claims</h3>
+
+        <h2 id="pendingClaims">28</h2>
+
+    </div>
+
+    <div class="stat-card">
+
+        <i class="fa-solid fa-xmark"></i>
+
+        <h3>Rejected Claims</h3>
+
+        <h2 id="rejectedClaims">12</h2>
+
+    </div>
+
+    <div class="stat-card">
+
+        <i class="fa-solid fa-user-doctor"></i>
+
+        <h3>Pending Doctor Review</h3>
+
+        <h2 id="pendingReview">19</h2>
+
+    </div>
+
+    <div class="stat-card">
+
+        <i class="fa-solid fa-robot"></i>
+
+        <h3>AI Processing</h3>
+
+        <h2 id="pendingAI">8</h2>
+
+    </div>
+
+</section>
+
+<!-- Disease Distribution -->
+
+<section class="dashboard-card">
+
+    <h2>
+
+        <i class="fa-solid fa-chart-pie"></i>
+
+        Disease Distribution
+
+    </h2>
+
+    <table>
+
+        <thead>
+
+            <tr>
+
+                <th>Disease</th>
+
+                <th>Cases</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+            <tr>
+
+                <td>Silicosis</td>
+
+                <td id="silicosisCount">68</td>
+
+            </tr>
+
+            <tr>
+
+                <td>Silicotuberculosis</td>
+
+                <td id="silicoTbCount">17</td>
+
+            </tr>
+
+            <tr>
+
+                <td>Tuberculosis</td>
+
+                <td id="tbCount">31</td>
+
+            </tr>
+
+            <tr>
+
+                <td>Normal</td>
+
+                <td id="normalCount">146</td>
+
+            </tr>
+
+        </tbody>
+
+    </table>
+
+</section>
+<!-- Recent Claims -->
+
+<section class="dashboard-card">
+
+    <h2>
+
+        <i class="fa-solid fa-folder-open"></i>
+
+        Recent Claims
+
+    </h2>
+
+    <table class="claims-table">
+
+        <thead>
+
+            <tr>
+
+                <th>Case ID</th>
+
+                <th>Worker</th>
+
+                <th>District</th>
+
+                <th>Diagnosis</th>
+
+                <th>Claim Status</th>
+
+                <th>Labour Dept.</th>
+
+                <th>Action</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+            <tr>
+
+                <td>CASE-2026-001</td>
+
+                <td>Ravi Kumar</td>
+
+                <td>Salem</td>
+
+                <td>Silicosis</td>
+
+                <td>
+
+                    <span class="status approved">
+
+                        Approved
+
+                    </span>
+
+                </td>
+
+                <td>
+
+                    <span class="status pending">
+
+                        Pending
+
+                    </span>
+
+                </td>
+
+                <td>
+
+                    <button class="view-btn">
+
+                        View
+
+                    </button>
+
+                </td>
+
+            </tr>
+
+            <tr>
+
+                <td>CASE-2026-002</td>
+
+                <td>Arun</td>
+
+                <td>Madurai</td>
+
+                <td>Tuberculosis</td>
+
+                <td>
+
+                    <span class="status rejected">
+
+                        Not Eligible
+
+                    </span>
+
+                </td>
+
+                <td>
+
+                    —
+
+                </td>
+
+                <td>
+
+                    <button class="view-btn">
+
+                        View
+
+                    </button>
+
+                </td>
+
+            </tr>
+
+            <tr>
+
+                <td>CASE-2026-003</td>
+
+                <td>Selvam</td>
+
+                <td>Namakkal</td>
+
+                <td>Silicotuberculosis</td>
+
+                <td>
+
+                    <span class="status approved">
+
+                        Approved
+
+                    </span>
+
+                </td>
+
+                <td>
+
+                    <span class="status approved">
+
+                        Verified
+
+                    </span>
+
+                </td>
+
+                <td>
+
+                    <button class="view-btn">
+
+                        View
+
+                    </button>
+
+                </td>
+
+            </tr>
+
+        </tbody>
+
+    </table>
+
+</section>
+
+<!-- Footer -->
+
+<footer class="footer">
+
+    <p>
+
+        © 2026 SilicoHelp • Labour Department Monitoring Portal
+
+    </p>
+
+</footer>
+
+</main>
+
+</div>
+
+<script type="module" src="../js/govdashboard.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Analytics | SilicoHelp</title>
+
+    <link rel="stylesheet" href="../css/analytics.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="header">
+
+        <a href="govdashboard.html" class="back-btn">
+            ← Back
+        </a>
+
+        <h1>Analytics Dashboard</h1>
+
+        <p>Government Statistics & Insights</p>
+
+    </div>
+
+    <section class="cards">
+
+        <div class="card">
+            <h3>Total Workers</h3>
+            <h2 id="workersCount">0</h2>
+        </div>
+
+        <div class="card">
+            <h3>Total Cases</h3>
+            <h2 id="casesCount">0</h2>
+        </div>
+
+        <div class="card">
+            <h3>Total Claims</h3>
+            <h2 id="claimsCount">0</h2>
+        </div>
+
+        <div class="card">
+            <h3>Approved</h3>
+            <h2 id="approvedCount">0</h2>
+        </div>
+
+        <div class="card">
+            <h3>Pending</h3>
+            <h2 id="pendingCount">0</h2>
+        </div>
+
+        <div class="card">
+            <h3>Rejected</h3>
+            <h2 id="rejectedCount">0</h2>
+        </div>
+
+    </section>
+
+    <section class="charts">
+
+        <div class="chart-card">
+
+            <h3>Disease Distribution</h3>
+
+            <canvas id="diseaseChart"></canvas>
+
+        </div>
+
+        <div class="chart-card">
+
+            <h3>Claim Status</h3>
+
+            <canvas id="claimChart"></canvas>
+
+        </div>
+
+    </section>
+
+</div>
+
+<script type="module" src="../js/analytics.js"></script>
+
+</body>
+</html>

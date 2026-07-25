@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Government Claims | SilicoHelp</title>
+
+    <link rel="stylesheet" href="../css/govclaims.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+
+<div class="layout">
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <div class="logo-section">
+            <img src="../assets/logo/silicohelp-logo.png" class="logo">
+        </div>
+
+        <nav>
+
+            <a href="govdashboard.html">
+                <i class="fa-solid fa-house"></i>
+                Dashboard
+            </a>
+
+            <a href="govclaims.html" class="active">
+                <i class="fa-solid fa-file-circle-check"></i>
+                Claims
+            </a>
+
+            <a href="analytics.html">
+                <i class="fa-solid fa-chart-line"></i>
+                Analytics
+            </a>
+
+            <a href="splash.html" class="logout">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                Logout
+            </a>
+
+        </nav>
+
+    </aside>
+
+    <!-- Main Content -->
+
+    <main class="content">
+
+        <header class="topbar">
+
+            <div>
+
+                <h1>Government Claims</h1>
+
+                <p>
+                    Review and process worker compensation claims.
+                </p>
+
+            </div>
+
+        </header>
+
+        <!-- Summary Cards -->
+
+        <section class="summary-grid">
+
+            <div class="summary-card warning">
+
+                <i class="fa-solid fa-hourglass-half"></i>
+
+                <h2 id="pendingCount">0</h2>
+
+                <p>Pending Claims</p>
+
+            </div>
+
+            <div class="summary-card info">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <h2 id="reviewCount">0</h2>
+
+                <p>Under Review</p>
+
+            </div>
+
+            <div class="summary-card success">
+
+                <i class="fa-solid fa-circle-check"></i>
+
+                <h2 id="approvedCount">0</h2>
+
+                <p>Approved</p>
+
+            </div>
+
+            <div class="summary-card danger">
+
+                <i class="fa-solid fa-circle-xmark"></i>
+
+                <h2 id="rejectedCount">0</h2>
+
+                <p>Rejected</p>
+
+            </div>
+
+        </section>
+
+        <!-- Filters -->
+
+        <section class="filters">
+
+            <input
+                type="text"
+                placeholder="Search by Worker Name or Claim ID">
+
+            <select>
+
+                <option>All Status</option>
+
+                <option>pending</option>
+
+                <option>submitted</option>
+
+                <option>under_verification</option>
+
+                <option>approved</option>
+
+                <option>rejected</option>
+
+            </select>
+
+        </section>
+
+        <!-- Claims -->
+
+        <section class="claims-container">
+
+            <!-- JavaScript will insert cards here -->
+
+        </section>
+
+    </main>
+
+</div>
+
+<script type="module" src="../js/govclaims.js"></script>
+
+</body>
+
+</html>
