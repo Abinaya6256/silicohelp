@@ -1,0 +1,383 @@
+/* ==========================================
+   SILICOHELP - RESULT PAGE
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:Arial,Helvetica,sans-serif;
+
+    background:linear-gradient(135deg,#EEF5FF,#F8FBFF);
+
+}
+
+.result-container{
+
+    width:92%;
+    max-width:1400px;
+
+    margin:40px auto;
+
+    text-align:center;
+
+}
+
+.result-logo{
+    width:300px;
+    height:auto;
+    margin:20px auto;
+    display:block;
+}
+
+.result-container h1{
+
+    color:#2563EB;
+
+    font-size:42px;
+
+    margin-bottom:10px;
+
+}
+
+.subtitle{
+
+    color:#64748B;
+
+    font-size:18px;
+
+    margin-bottom:35px;
+
+}
+
+/* ============================= */
+
+.result-card{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:35px;
+
+    background:white;
+
+    border-radius:25px;
+
+    padding:35px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+}
+
+/* ============================= */
+
+.left-panel{
+
+    text-align:center;
+
+}
+
+.left-panel h2{
+
+    margin-bottom:20px;
+
+    color:#2563EB;
+
+}
+
+.xray-image{
+
+    width:100%;
+
+    max-width:520px;
+
+    border-radius:18px;
+
+    border:2px solid #CBD5E1;
+
+}
+
+/* ============================= */
+
+.right-panel{
+
+    text-align:left;
+
+}
+
+#prediction{
+
+    font-size:34px;
+
+    margin-bottom:25px;
+
+    color:#DC2626;
+
+}
+
+/* ============================= */
+
+.confidence-card{
+
+    background:#EFF6FF;
+
+    border-left:6px solid #2563EB;
+
+    padding:20px;
+
+    border-radius:18px;
+
+    margin-bottom:25px;
+
+}
+
+.confidence-card p{
+
+    color:#64748B;
+
+    margin-bottom:10px;
+
+}
+
+#confidence{
+
+    color:#2563EB;
+
+    font-size:48px;
+
+}
+
+/* ============================= */
+
+.finding-card{
+
+    background:#F8FAFC;
+
+    padding:22px;
+
+    border-radius:18px;
+
+    margin-bottom:25px;
+
+}
+
+.finding-card h3{
+
+    margin-bottom:15px;
+
+}
+
+.finding-card ul{
+
+    padding-left:20px;
+
+}
+
+.finding-card li{
+
+    margin-bottom:10px;
+
+}
+
+/* ============================= */
+
+.recommendation{
+
+    background:#FEF3C7;
+
+    border-left:6px solid #F59E0B;
+
+    padding:20px;
+
+    border-radius:18px;
+
+    margin-bottom:30px;
+
+}
+
+/* ============================= */
+
+#doctorBtn{
+
+    width:100%;
+
+    padding:18px;
+
+    border:none;
+
+    border-radius:15px;
+
+    background:#2563EB;
+
+    color:white;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+#doctorBtn:hover{
+
+    background:#1D4ED8;
+
+    transform:translateY(-2px);
+
+}
+
+/* ============================= */
+
+@media(max-width:900px){
+
+.result-card{
+    display: flex;
+    align-items: flex-start;
+grid-template-columns:1fr;
+
+}
+
+.right-panel{
+
+text-align:center;
+
+}
+
+.finding-card{
+
+text-align:left;
+
+}
+
+}
+.left-panel{
+
+    display:flex;
+
+    flex-direction:column;
+    justify-content: flex-start;
+
+    gap:25px;
+
+}
+
+.image-section{
+
+    text-align:center;
+
+}
+
+.image-section h2{
+
+    margin-bottom:12px;
+
+}
+
+.xray-image{
+
+    width:100%;
+
+    max-width:350px;
+
+    border-radius:12px;
+
+    border:2px solid #ddd;
+
+}
+/* ===========================
+   IMAGE COMPARISON
+=========================== */
+
+.image-comparison{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+.image-box{
+
+    flex:1;
+
+    min-width:250px;
+
+    text-align:center;
+
+}
+
+.comparison-image{
+
+    width:100%;
+
+    max-width:280px;
+
+    height:300px;
+
+    object-fit:contain;
+
+    border-radius:15px;
+
+    background:white;
+
+    border:2px solid #d9e6ef;
+
+    box-shadow:0 6px 18px rgba(0,0,0,.08);
+
+    padding:10px;
+
+}
+
+.arrow{
+
+    font-size:42px;
+
+    font-weight:bold;
+
+    color:#009688;
+
+}
+@media(max-width:900px){
+
+.image-comparison{
+
+    flex-direction:column;
+
+}
+
+.arrow{
+
+    transform:rotate(90deg);
+
+}
+
+}
+.diagnosis-card{
+    background:#f2fbf9;
+    border-left:6px solid #0f8d72;
+    border-radius:12px;
+    padding:18px;
+    margin-bottom:20px;
+}
+
+.diagnosis-label{
+    font-size:14px;
+    color:#666;
+    margin-bottom:8px;
+    letter-spacing:1px;
+    text-transform:uppercase;
+}

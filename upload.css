@@ -1,0 +1,255 @@
+/* ==========================================
+   SILICOHELP - UPLOAD PAGE
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    background:linear-gradient(135deg,#eef5ff,#f8fbff);
+}
+
+.upload-container{
+
+    width:90%;
+    max-width:900px;
+    margin:40px auto;
+    text-align:center;
+
+}
+
+.upload-logo{
+
+    width:110px;
+    margin-bottom:15px;
+
+}
+
+.upload-container h1{
+
+    color:#2563EB;
+    font-size:42px;
+    margin-bottom:10px;
+
+}
+
+.subtitle{
+
+    color:#64748B;
+    font-size:18px;
+    margin-bottom:30px;
+
+}
+
+/* Progress */
+
+.progress-container{
+
+    margin-bottom:30px;
+
+}
+
+.progress-container p{
+
+    font-weight:bold;
+    color:#2563EB;
+    margin-bottom:10px;
+
+}
+
+.progress-bar{
+
+    width:100%;
+    height:12px;
+    background:#dbeafe;
+    border-radius:20px;
+    overflow:hidden;
+
+}
+
+.progress-fill{
+
+    width:87%;
+    height:100%;
+    background:linear-gradient(90deg,#2563EB,#3B82F6);
+
+}
+
+/* Upload Card */
+
+.upload-card{
+
+    background:#fff;
+    border-radius:20px;
+    padding:40px;
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+}
+
+/* Drop Area */
+
+#dropArea{
+
+    border:3px dashed #60A5FA;
+    border-radius:20px;
+    padding:50px 20px;
+    transition:.3s;
+    cursor:pointer;
+
+}
+
+#dropArea.dragover{
+
+    background:#EFF6FF;
+    border-color:#2563EB;
+
+}
+
+.upload-icon{
+
+    font-size:70px;
+    margin-bottom:15px;
+
+}
+
+#dropArea h2{
+
+    color:#2563EB;
+    margin-bottom:10px;
+
+}
+
+#dropArea p{
+
+    margin:10px 0;
+
+}
+
+/* Browse Button */
+
+.browse-btn{
+
+    display:inline-block;
+    margin:20px 0;
+    padding:14px 26px;
+    background:#2563EB;
+    color:white;
+    border-radius:12px;
+    cursor:pointer;
+    font-weight:bold;
+    transition:.3s;
+
+}
+
+.browse-btn:hover{
+
+    background:#1D4ED8;
+
+}
+
+input[type=file]{
+
+    display:none;
+
+}
+
+/* Preview */
+
+#previewSection{
+
+    display:none;
+    margin-top:35px;
+
+}
+
+#previewImage{
+
+    width:100%;
+    max-width:420px;
+    border-radius:15px;
+    border:2px solid #CBD5E1;
+    margin-bottom:20px;
+
+}
+
+.file-info{
+
+    background:#F8FAFC;
+    border-radius:15px;
+    padding:20px;
+    text-align:left;
+
+}
+
+.file-info p{
+
+    margin-bottom:10px;
+
+}
+
+.ready{
+
+    color:#16A34A;
+    font-weight:bold;
+
+}
+
+/* Continue */
+
+#continueBtn{
+
+    width:100%;
+    margin-top:35px;
+    padding:18px;
+    border:none;
+    border-radius:14px;
+    background:#2563EB;
+    color:white;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+
+}
+
+#continueBtn:disabled{
+
+    background:#94A3B8;
+    cursor:not-allowed;
+
+}
+
+#continueBtn:not(:disabled):hover{
+
+    background:#1D4ED8;
+    transform:translateY(-2px);
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+    .upload-card{
+
+        padding:25px;
+
+    }
+
+    .upload-container h1{
+
+        font-size:32px;
+
+    }
+
+    .upload-icon{
+
+        font-size:55px;
+
+    }
+
+}

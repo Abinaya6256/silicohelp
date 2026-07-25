@@ -1,0 +1,393 @@
+/* ==========================================
+   SILICOHELP - WORKER DASHBOARD
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:Arial,Helvetica,sans-serif;
+
+    background:linear-gradient(135deg,#EEF5FF,#F8FBFF);
+
+    color:#1E293B;
+
+}
+
+.dashboard-container{
+
+    width:92%;
+
+    max-width:1200px;
+
+    margin:40px auto;
+
+    text-align:center;
+
+}
+
+.dashboard-logo{
+
+    width:230px;
+
+    margin: bottom 10px;
+
+}
+
+.dashboard-container h1{
+
+    color:#2563EB;
+
+    font-size:42px;
+
+    margin-bottom:10px;
+
+}
+
+.subtitle{
+
+    color:#64748B;
+
+    margin-bottom:35px;
+
+    font-size:18px;
+
+}
+
+/* ========================= */
+
+.welcome-card{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+    margin-bottom:30px;
+
+}
+
+.welcome-card h2{
+
+    color:#2563EB;
+
+    margin-bottom:10px;
+
+}
+
+/* ========================= */
+
+.dashboard-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:25px;
+
+    margin-bottom:35px;
+
+}
+
+.info-card{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:25px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.info-card h3{
+
+    margin-bottom:15px;
+
+    color:#2563EB;
+
+}
+
+.info-card p{
+
+    font-size:22px;
+
+    font-weight:bold;
+
+}
+
+.pending{
+
+    color:#F59E0B;
+
+}
+
+/* ========================= */
+
+.timeline{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:30px;
+
+    text-align:left;
+
+    margin-bottom:30px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.timeline h2{
+
+    margin-bottom:20px;
+
+    color:#2563EB;
+
+}
+
+.timeline ul{
+
+    list-style:none;
+
+}
+
+.timeline li{
+
+    padding:12px 0;
+
+    border-bottom:1px solid #E2E8F0;
+
+}
+
+.timeline li:last-child{
+
+    border:none;
+
+}
+
+/* ========================= */
+
+.documents{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:30px;
+
+    text-align:left;
+
+    margin-bottom:35px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.documents h2{
+
+    color:#2563EB;
+
+    margin-bottom:20px;
+
+}
+
+.documents ul{
+
+    list-style:none;
+
+}
+
+.documents li{
+
+    padding:12px 0;
+
+    border-bottom:1px solid #E2E8F0;
+
+}
+
+.documents li:last-child{
+
+    border:none;
+
+}
+
+/* ========================= */
+
+#logoutBtn{
+
+    width:100%;
+
+    padding:18px;
+
+    border:none;
+
+    border-radius:15px;
+
+    background:#2563EB;
+
+    color:white;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+#logoutBtn:hover{
+
+    background:#1D4ED8;
+
+    transform:translateY(-2px);
+
+}
+
+/* ========================= */
+
+@media(max-width:768px){
+
+.dashboard-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.dashboard-container h1{
+
+font-size:32px;
+
+}
+
+.timeline,
+.documents{
+
+padding:20px;
+
+}
+
+}
+/* ==============================
+   CLAIM TRACKING CARD
+============================== */
+
+.claim-card{
+
+background:#ffffff;
+
+margin-top:25px;
+
+padding:22px;
+
+border-radius:18px;
+
+box-shadow:0 8px 20px rgba(0,0,0,0.08);
+
+border-left:6px solid #2563eb;
+
+animation:fadeUp .5s ease;
+
+}
+
+.claim-card h2{
+
+margin-bottom:20px;
+
+font-size:22px;
+
+color:#1e3a8a;
+
+}
+
+.claim-row{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:12px 0;
+
+border-bottom:1px solid #ececec;
+
+}
+
+.claim-row:last-child{
+
+border-bottom:none;
+
+}
+
+.claim-label{
+
+font-weight:600;
+
+color:#555;
+
+}
+
+.claim-value{
+
+font-weight:700;
+
+color:#111827;
+
+}
+
+.claim-value.pending{
+
+color:#f59e0b;
+
+}
+
+.claim-value.approved{
+
+color:#16a34a;
+
+}
+
+.claim-value.rejected{
+
+color:#dc2626;
+
+}
+
+@media(max-width:768px){
+
+.claim-row{
+
+flex-direction:column;
+
+align-items:flex-start;
+
+gap:6px;
+
+}
+
+.claim-card{
+
+padding:18px;
+
+}
+
+.claim-card h2{
+
+font-size:20px;
+
+}
+
+}
