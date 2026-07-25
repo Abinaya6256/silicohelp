@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Worker Dashboard | SilicoHelp</title>
+
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/worker-dashboard.css">
+<link rel="stylesheet" href="../css/animations.css">
+
+</head>
+
+<body>
+
+<div class="dashboard-container">
+
+<img src="../assets/logo/silicohelp-logo.png"
+class="dashboard-logo">
+
+<h1 data-i18n="title">
+Worker Dashboard
+</h1>
+
+<p class="subtitle"
+data-i18n="subtitle">
+Track your screening and compensation process.
+</p>
+
+<div class="welcome-card">
+
+<h2 id="workerName">
+Welcome!
+</h2>
+
+<p data-i18n="registration">
+Your registration has been successfully completed.
+</p>
+
+</div>
+
+<!-- Dashboard Cards -->
+
+<div class="dashboard-grid">
+
+<div class="info-card">
+
+<h3 data-i18n="aiScreening">
+🤖 AI Screening
+</h3>
+
+<p id="predictionResult">
+Waiting...
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3 data-i18n="confidence">
+📊 Confidence
+</h3>
+
+<p id="confidenceResult">
+--
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3 data-i18n="doctorReview">
+👨‍⚕️ Doctor Review
+</h3>
+
+<p class="pending"
+data-i18n="pending">
+Pending
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3 data-i18n="compensation">
+💰 Compensation
+</h3>
+
+<p class="pending"
+data-i18n="notStarted">
+Not Started
+</p>
+
+</div>
+
+</div>
+
+<!-- Claim Tracking -->
+
+<div class="claim-card">
+
+<h2>
+📄 Claim Tracking
+</h2>
+
+<div class="claim-row">
+<span class="claim-label">Claim Status</span>
+<span id="claimStatus" class="claim-value pending">
+🟡 Under Review
+</span>
+</div>
+
+<div class="claim-row">
+<span class="claim-label">Claim ID</span>
+<span id="claimId" class="claim-value">
+SH-2026-000123
+</span>
+</div>
+
+<div class="claim-row">
+<span class="claim-label">Submitted On</span>
+<span id="submittedDate" class="claim-value">
+17 Jul 2026
+</span>
+</div>
+
+<div class="claim-row">
+<span class="claim-label">Current Stage</span>
+<span id="currentStage" class="claim-value">
+Doctor Verification
+</span>
+</div>
+
+<div class="claim-row">
+<span class="claim-label">Last Updated</span>
+<span id="lastUpdated" class="claim-value">
+17 Jul 2026 • 09:30 AM
+</span>
+</div>
+
+</div>
+
+<!-- Timeline -->
+
+<div class="timeline">
+
+<h2 data-i18n="progress">
+Application Progress
+</h2>
+
+<ul>
+
+<li>✅ <span data-i18n="registration">Registration Completed</span></li>
+
+<li>✅ <span data-i18n="occupational">Occupational History</span></li>
+
+<li>✅ <span data-i18n="symptoms">Symptoms Questionnaire</span></li>
+
+<li>✅ <span data-i18n="xray">Chest X-ray</span></li>
+
+<li>✅ <span data-i18n="aiScreening">AI Screening</span></li>
+
+<li>🟡 <span data-i18n="doctorReview">Doctor Review</span></li>
+
+<li>⚪ <span data-i18n="compensation">Compensation</span></li>
+
+</ul>
+
+</div>
+
+<!-- Uploaded Documents -->
+
+<div class="documents">
+
+<h2 data-i18n="documents">
+Uploaded Documents
+</h2>
+
+<ul>
+
+<li>✅ <span data-i18n="aadhaar">Aadhaar Details</span></li>
+
+<li>✅ <span data-i18n="occupational">Occupational History</span></li>
+
+<li>✅ <span data-i18n="symptoms">Symptoms Questionnaire</span></li>
+
+<li>✅ <span data-i18n="xray">Chest X-ray</span></li>
+
+</ul>
+
+</div>
+
+<button
+id="logoutBtn"
+data-i18n="logout">
+Logout
+</button>
+
+</div>
+
+<script src="../translations/common-text.js"></script>
+<script src="../translations/worker-dashboard-text.js"></script>
+<script src="../js/i18n.js"></script>
+
+<script>
+translatePage(workerDashboardText);
+</script>
+
+<script type="module" src="../js/worker-dashboard.js"></script>
+
+</body>
+</html>

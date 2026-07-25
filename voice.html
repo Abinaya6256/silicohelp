@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Voice Guidance</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/voice.css">
+    <link rel="stylesheet" href="../css/animations.css">
+
+</head>
+
+<body>
+
+<div class="voice-container">
+
+    <div class="voice-icon">
+        🎤
+    </div>
+
+    <h1 data-i18n="title">
+Enable Voice Guidance
+</h1>
+
+   <p class="voice-description"
+   data-i18n="description">
+SilicoHelp can read instructions aloud in your selected language.
+</p>
+
+    <button class="allow-btn"
+        data-i18n="allow">
+🎤 Allow Voice Guidance
+</button>
+
+    <button class="skip-btn"
+        data-i18n="skip">
+Skip for Now
+</button>
+
+</div>
+
+<script src="../translations/common-text.js"></script>
+
+<script src="../translations/voice-text.js"></script>
+
+<script src="../js/i18n.js"></script>
+
+<script>
+translatePage(voiceText);
+</script>
+
+<script src="../js/voice.js"></script>
+
+</body>
+
+</html>

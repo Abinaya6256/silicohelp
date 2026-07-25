@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login | SilicoHelp</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/animations.css">
+
+</head>
+
+<body>
+
+<div class="login-container">
+
+    <img src="../assets/logo/silicohelp-logo.png"
+         class="login-logo"
+         alt="SilicoHelp">
+
+    <h1 data-i18n="title">
+Welcome Back
+</h1>
+
+    <p id="userType"></p>
+
+    <div class="login-card">
+
+        <label data-i18n="mobileLabel">
+Mobile Number
+</label>
+
+        <div class="phone-input">
+
+            <span>+91</span>
+
+           <input
+type="text"
+id="mobile"
+maxlength="10"
+inputmode="numeric"
+data-i18n-placeholder="mobilePlaceholder"
+placeholder="Enter 10-digit mobile number">
+
+        </div>
+
+        <button
+id="sendOtp"
+data-i18n="sendOtp">
+
+Send OTP
+
+</button>
+
+        <p
+class="note"
+data-i18n="subtitle">
+
+Enter your mobile number to continue.
+
+</p>
+
+    </div>
+
+</div>
+
+<script src="../translations/common-text.js"></script>
+
+<script src="../translations/login-text.js"></script>
+
+<script src="../js/i18n.js"></script>
+
+<script>
+translatePage(loginText);
+</script>
+
+<script src="../js/auth.js"></script>
+
+</body>
+
+</html>

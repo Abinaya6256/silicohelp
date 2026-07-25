@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Basic Details | SilicoHelp</title>
+
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/basic-details.css">
+    <link rel="stylesheet" href="../css/progress.css">
+    <link rel="stylesheet" href="../css/animations.css">
+
+</head>
+
+<body data-step="1">
+
+<div class="progress-container">
+
+    <div class="progress-title">
+        <h3 id="stepText">Step 1 of 5</h3>
+    </div>
+
+    <div class="stepper">
+
+        <div class="step">
+            <div class="circle">1</div>
+            <span>Basic Details</span>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="step">
+            <div class="circle">2</div>
+            <span>Work History</span>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="step">
+            <div class="circle">3</div>
+            <span>Symptoms</span>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="step">
+            <div class="circle">4</div>
+            <span>X-ray</span>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="step">
+            <div class="circle">5</div>
+            <span>AI Result</span>
+        </div>
+
+    </div>
+
+</div>
+
+
+<div class="basic-container">
+
+    <img src="../assets/logo/silicohelp-logo.png"
+         class="basic-logo"
+         alt="SilicoHelp Logo">
+
+    <h1 data-i18n="title">
+Complete Your Profile
+</h1>
+
+    <p class="subtitle" data-i18n="subtitle">
+Help us identify you correctly.
+</p>
+
+    <div class="basic-card">
+
+        <label data-i18n="fullName">
+Full Name
+</label>
+        <input
+            type="text"
+            id="fullName"
+            placeholder="Enter your full name">
+
+        <label data-i18n="aadhaar">
+Aadhaar Number
+</label>
+        <input
+type="text"
+id="aadhaar"
+maxlength="14"
+data-i18n-placeholder="aadhaarPlaceholder"
+placeholder="1234 5678 9012">
+
+       <label data-i18n="mobile">
+Mobile Number
+</label>
+
+<input
+type="text"
+id="mobile"
+readonly>
+
+        <label data-i18n="dob">
+Date of Birth
+</label>
+        <input
+            type="date"
+            id="dob">
+            <p id="ageDisplay"></p>
+
+       <label data-i18n="gender">
+Gender
+</label>
+
+        <div class="gender-options">
+
+            <button class="gender-btn">
+                👨
+<br>
+<span data-i18n="male">Male</span>
+            </button>
+
+            <button class="gender-btn">
+                👩
+<br>
+<span data-i18n="female">Female</span>
+            </button>
+
+            <button class="gender-btn">
+               ⚧
+<br>
+<span data-i18n="other">Other</span>
+            </button>
+
+        </div>
+
+        <label data-i18n="address">
+Address
+</label>
+
+        <textarea
+id="address"
+rows="3"
+data-i18n-placeholder="addressPlaceholder"
+placeholder="House No, Street"></textarea>
+       <label data-i18n="village">
+Village / Town
+</label>
+       <input
+type="text"
+id="village"
+data-i18n-placeholder="villagePlaceholder"
+placeholder="Village or Town">
+        <label data-i18n="district">
+District
+</label>
+
+        <input
+type="text"
+id="district"
+data-i18n-placeholder="districtPlaceholder"
+placeholder="District">
+
+       <label data-i18n="state">
+State / Union Territory
+</label>
+<select id="state">
+
+    <option value="" data-i18n="selectState">
+Select State / Union Territory
+</option>
+    <!-- States -->
+
+    <option>Andhra Pradesh</option>
+    <option>Arunachal Pradesh</option>
+    <option>Assam</option>
+    <option>Bihar</option>
+    <option>Chhattisgarh</option>
+    <option>Goa</option>
+    <option>Gujarat</option>
+    <option>Haryana</option>
+    <option>Himachal Pradesh</option>
+    <option>Jharkhand</option>
+    <option>Karnataka</option>
+    <option>Kerala</option>
+    <option>Madhya Pradesh</option>
+    <option>Maharashtra</option>
+    <option>Manipur</option>
+    <option>Meghalaya</option>
+    <option>Mizoram</option>
+    <option>Nagaland</option>
+    <option>Odisha</option>
+    <option>Punjab</option>
+    <option>Rajasthan</option>
+    <option>Sikkim</option>
+    <option>Tamil Nadu</option>
+    <option>Telangana</option>
+    <option>Tripura</option>
+    <option>Uttar Pradesh</option>
+    <option>Uttarakhand</option>
+    <option>West Bengal</option>
+
+    <!-- Union Territories -->
+
+    <option>Andaman and Nicobar Islands</option>
+    <option>Chandigarh</option>
+    <option>Dadra and Nagar Haveli and Daman and Diu</option>
+    <option>Delhi (NCT)</option>
+    <option>Jammu and Kashmir</option>
+    <option>Ladakh</option>
+    <option>Lakshadweep</option>
+    <option>Puducherry</option>
+
+</select>
+
+        <button
+id="continueBtn"
+data-i18n="continue">
+
+Continue
+
+</button>
+    </div>
+
+</div>
+
+<script src="../translations/common-text.js"></script>
+
+<script src="../translations/basic-details-text.js"></script>
+<script src="../translations/dropdowns-text.js"></script>
+<script src="../js/i18n.js"></script>
+
+<script>
+translatePage(basicDetailsText);
+</script>
+<script type="module" src="../js/basic-details.js"></script>
+<script src="../js/progress.js"></script>
+</body>
+
+</html>

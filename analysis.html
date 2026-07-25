@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>AI Analysis | SilicoHelp</title>
+
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/analysis.css">
+<link rel="stylesheet" href="../css/animations.css">
+
+</head>
+
+<body>
+
+<div class="analysis-container">
+
+<img src="../assets/logo/silicohelp-logo.png"
+class="analysis-logo">
+
+<h1 data-i18n="title">
+AI Analysis in Progress
+</h1>
+<p class="subtitle" data-i18n="subtitle">
+
+Please wait while our AI analyzes your Chest X-ray.
+
+</p>
+
+<div class="brain">
+
+🧠
+
+</div>
+
+<div class="progress-bar">
+
+<div id="progressFill"></div>
+
+</div>
+
+<p id="progressText">
+
+0%
+
+</p>
+
+<div class="status-card">
+
+<p id="statusMessage" data-i18n="initializing">
+
+Initializing AI...
+
+</p>
+
+</div>
+
+<div class="steps">
+
+<div id="step1" data-i18n="step1">
+⬜ Checking image quality
+</div>
+<div id="step2" data-i18n="step2">
+⬜ Detecting lung region
+</div>
+<div id="step3" data-i18n="step3">
+⬜ Screening for Silicosis
+</div>
+<div id="step4" data-i18n="step4">
+⬜ Generating AI report
+</div>
+
+</div>
+
+<p class="note" data-i18n="note">
+
+This usually takes less than 10 seconds.
+
+</p>
+
+</div>
+
+<script src="../translations/common-text.js"></script>
+
+<script src="../translations/analysis-text.js"></script>
+
+<script src="../js/i18n.js"></script>
+
+<script>
+translatePage(analysisText);
+</script>
+
+<script src="../js/analysis.js"></script>
+
+</body>
+
+</html>

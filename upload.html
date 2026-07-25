@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Upload Chest X-ray | SilicoHelp</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/upload.css">
+    <link rel="stylesheet" href="../css/progress.css">
+    <link rel="stylesheet" href="../css/animations.css">
+
+</head>
+
+<body data-step="4">
+
+<div class="upload-container">
+
+    <img src="../assets/logo/silicohelp-logo.png"
+         class="upload-logo"
+         alt="SilicoHelp Logo">
+
+    <h1 data-i18n="title">
+Upload Chest X-ray
+</h1>
+
+    <p class="subtitle" data-i18n="subtitle">
+Please upload a clear PA Chest X-ray for AI-assisted screening.
+</p>
+
+    <!-- Progress -->
+
+    <div class="progress-container">
+
+    <div class="progress-title">
+        <h3 id="stepText">Step 1 of 5</h3>
+    </div>
+
+    <div class="stepper">
+
+        <div class="step">
+            <div class="circle">1</div>
+            <span>Basic Details</span>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="step">
+            <div class="circle">2</div>
+            <span>Work History</span>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="step">
+            <div class="circle">3</div>
+            <span>Symptoms</span>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="step">
+            <div class="circle">4</div>
+            <span>X-ray</span>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="step">
+            <div class="circle">5</div>
+            <span>AI Result</span>
+        </div>
+
+    </div>
+
+</div>
+
+
+    <!-- Upload Card -->
+
+    <div class="upload-card">
+
+        <div id="dropArea">
+
+            <div class="upload-icon">
+
+                📤
+
+            </div>
+
+            <h2 data-i18n="dragDrop">
+Drag & Drop your X-ray
+</h2>
+
+            <p>or</p>
+
+            <label
+for="fileInput"
+class="browse-btn"
+data-i18n="browse">
+
+Browse File
+
+</label>
+
+            <input
+                type="file"
+                id="fileInput"
+                accept=".jpg,.jpeg,.png">
+
+            <small data-i18n="supported">
+
+Supported formats: JPG, JPEG, PNG
+
+</small>
+
+        </div>
+
+        <!-- Preview -->
+
+        <div id="previewSection">
+
+            <img id="previewImage">
+
+            <div class="file-info">
+
+                <p>
+
+                    <strong data-i18n="selected">
+Selected File:
+</strong>
+
+                    <span id="fileName"></span>
+
+                </p>
+
+                <p>
+
+                    <strong>Size:</strong>
+
+                    <span id="fileSize"></span>
+
+                </p>
+
+                <p class="ready">
+
+✅ <span data-i18n="upload">
+Ready for AI Analysis
+
+</span>
+
+</p>
+
+            </div>
+
+        </div>
+
+        <button
+id="continueBtn"
+data-i18n="continue"
+disabled>
+
+Continue
+
+</button>
+    </div>
+
+</div>
+
+
+<script src="../translations/common-text.js"></script>
+
+<script src="../translations/upload-text.js"></script>
+
+<script src="../js/i18n.js"></script>
+<script src="../js/progress.js"></script>
+
+<script>
+translatePage(uploadText);
+</script>
+
+<script type="module" src="../js/upload.js"></script>
+</body>
+
+</html>

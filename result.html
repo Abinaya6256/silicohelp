@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>AI Screening Result | SilicoHelp</title>
+
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/result.css">
+<link rel="stylesheet" href="../css/progress.css">
+<link rel="stylesheet" href="../css/animations.css">
+
+</head>
+
+<body data-step="5">
+<div class="progress-container">
+
+    <div class="progress-title">
+        <h3 id="stepText">Step 1 of 5</h3>
+    </div>
+
+    <div class="stepper">
+
+        <div class="step">
+            <div class="circle">1</div>
+            <span>Basic Details</span>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="step">
+            <div class="circle">2</div>
+            <span>Work History</span>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="step">
+            <div class="circle">3</div>
+            <span>Symptoms</span>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="step">
+            <div class="circle">4</div>
+            <span>X-ray</span>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="step">
+            <div class="circle">5</div>
+            <span>AI Result</span>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="result-container">
+
+<img src="../assets/logo/silicohelp-logo.png"
+class="result-logo">
+
+<h1 data-i18n="title">
+AI Screening Result
+</h1>
+
+<p class="subtitle" data-i18n="subtitle">
+
+The uploaded Chest X-ray has been analyzed.
+
+</p>
+
+<div class="result-card">
+
+<div class="left-panel">
+
+    <div class="image-comparison">
+
+    <div class="image-box">
+
+        <h3>Original Chest X-ray</h3>
+
+        <img
+            id="xrayImage"
+            class="comparison-image">
+
+    </div>
+
+    <div class="arrow">
+
+        ➜
+
+    </div>
+
+    <div class="image-box">
+
+        <h3>AI Attention Heatmap</h3>
+
+        <img
+            id="heatmapImage"
+            class="comparison-image">
+
+    </div>
+
+</div>
+
+</div>
+
+<div class="right-panel">
+
+<div class="diagnosis-card">
+
+    <p class="diagnosis-label">
+        AI Diagnosis
+    </p>
+
+    <h2 id="prediction">
+        Analyzing...
+    </h2>
+
+</div>
+
+<div class="confidence-card">
+
+<p data-i18n="confidence">
+
+Confidence Score
+
+</p>
+
+<h1 id="confidence">
+
+0%
+
+</h1>
+
+</div>
+
+<div class="finding-card">
+
+<h3 data-i18n="findingsTitle">
+    FINDINGS TEST
+</h3>
+
+<ul id="findings">
+
+</ul>
+
+</div>
+
+<div class="recommendation">
+
+<h3 data-i18n="recommendation">
+
+Recommendation
+
+</h3>
+
+<p
+id="recommendationText"
+data-i18n="waiting">
+
+Waiting...
+
+</p>
+
+</div>
+
+<button
+id="doctorBtn"
+data-i18n="sendDoctor">
+
+Send to Doctor Review →
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="../translations/common-text.js"></script>
+
+<script src="../translations/result-text.js"></script>
+
+<script src="../js/i18n.js"></script>
+
+<script>
+translatePage(resultText);
+</script>
+
+<script type="module" src="../js/result.js"></script>
+<script src="../js/progress.js"></script>
+</body>
+
+</html>

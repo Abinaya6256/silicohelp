@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Welcome | SilicoHelp</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/welcome.css">
+    <link rel="stylesheet" href="../css/animations.css">
+
+</head>
+
+<body>
+
+<div class="welcome-container">
+
+    <img src="../assets/logo/silicohelp-logo.png"
+         class="welcome-logo"
+         alt="SilicoHelp Logo">
+
+    <h1 data-i18n="title">
+Welcome to SilicoHelp
+</h1>
+
+    <p class="tagline"
+data-i18n="tagline">
+
+Supporting occupational health...
+
+</p>
+
+    <div class="welcome-card">
+
+        <h2
+data-i18n="cardTitle">
+
+Let's get started.
+
+</h2>
+
+        <p
+data-i18n="cardText">
+
+You're just a few steps away from completing
+your occupational health screening.
+
+        </p>
+
+        <button
+class="start-btn"
+data-i18n="startButton">
+
+Start Registration
+
+</button>
+
+        <button
+class="login-btn"
+data-i18n="loginButton">
+
+Already Registered? Login
+
+</button>
+
+    </div>
+
+    <div class="status-card">
+
+        <p><strong>🌐 Language:</strong> <span id="language"></span></p>
+
+        <p><strong>🎤 Voice Guidance:</strong> <span id="voice"></span></p>
+
+    </div>
+
+</div>
+
+<script src="../translations/common-text.js"></script>
+<script src="../translations/welcome-text.js"></script>
+
+<script src="../js/i18n.js"></script>
+
+<script>
+    translatePage(welcomeText);
+</script>
+
+<script src="../js/welcome.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Occupational History</title>
+
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/occupational-history.css">
+<link rel="stylesheet" href="../css/progress.css">
+<link rel="stylesheet" href="../css/animations.css">
+
+</head>
+
+<body data-step="2">
+
+<div class="history-container">
+
+<img src="../assets/logo/silicohelp-logo.png"
+class="history-logo">
+
+<h1 data-i18n="title">
+Occupational Work History
+</h1>
+<p class="subtitle" data-i18n="subtitle">
+Tell us about your work environment.
+</p>
+
+<div class="progress-container">
+
+    <div class="progress-title">
+        <h3 id="stepText">Step 1 of 5</h3>
+    </div>
+
+    <div class="stepper">
+
+        <div class="step">
+            <div class="circle">1</div>
+            <span>Basic Details</span>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="step">
+            <div class="circle">2</div>
+            <span>Work History</span>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="step">
+            <div class="circle">3</div>
+            <span>Symptoms</span>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="step">
+            <div class="circle">4</div>
+            <span>X-ray</span>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="step">
+            <div class="circle">5</div>
+            <span>AI Result</span>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="history-card">
+<label data-i18n="workplace">
+🏭 Workplace Name
+</label>
+
+<input
+type="text"
+id="workplace"
+data-i18n-placeholder="workplacePlaceholder"
+placeholder="Example: ABC Granite Quarry">
+
+<label data-i18n="jobType">
+👷 Job Type
+</label>
+
+
+<select id="jobType">
+</select>
+
+<div class="years-header">
+
+    <label data-i18n="yearsWorked">
+        📅 Years Worked
+    </label>
+
+    <span id="yearsValue">10 years</span>
+
+</div>
+<input
+type="range"
+id="years"
+min="0"
+max="40"
+value="10">
+<p id="riskMessage"></p>
+
+<h3 data-i18n="dustExposure">
+🌫 Daily Dust Exposure
+</h3>
+
+<div class="dust-options">
+
+<button class="dust-btn" data-i18n="veryLow">
+🟢 Very Low
+</button>
+<button class="dust-btn" data-i18n="low">
+🟢 Low
+</button>
+<button class="dust-btn" data-i18n="moderate">
+🟡 Moderate
+</button>
+<button class="dust-btn" data-i18n="high">
+🟠 High
+</button>
+<button class="dust-btn" data-i18n="veryHigh">
+🔴 Very High
+</button>
+
+</div>
+
+<h3 data-i18n="safetyEquipment">
+😷 Safety Equipment Used
+</h3>
+
+<div class="mask-options">
+
+<button class="mask-btn" data-i18n="always">
+Always
+</button>
+
+<button class="mask-btn" data-i18n="sometimes">
+Sometimes
+</button>
+
+<button class="mask-btn" data-i18n="never">
+Never
+</button>
+
+</div>
+
+<button
+id="continueBtn"
+data-i18n="continue">
+
+Continue
+
+</button>
+
+</div>
+
+</div>
+
+<script src="../translations/common-text.js"></script>
+
+<script src="../translations/occupational-history-text.js"></script>
+
+<script src="../translations/dropdowns-text.js"></script>
+<script src="../js/i18n.js"></script>
+
+<script>
+translatePage(occupationalHistoryText);
+</script>
+
+<script src="../js/occupational-history.js"></script>
+<script src="../js/progress.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Choose Language</title>
+
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/language.css">
+<link rel="stylesheet" href="../css/animations.css">
+
+</head>
+
+<body>
+
+<div class="language-container">
+
+    <div class="language-header">
+
+        <div class="language-icon">
+            🌐
+        </div>
+
+        <h1 data-i18n="title">
+
+Choose Your Language
+
+</h1>
+
+        <p data-i18n="subtitle">
+
+Select your preferred language to continue.
+
+</p>
+
+    </div>
+
+    <button class="instruction-btn" data-i18n="hearInstructions">
+    🔊 Hear Instructions
+</button>
+
+    <div class="language-list">
+
+        <div class="language-card" data-language="English" data-code="en-IN">
+
+            <div>
+
+                <h2>English</h2>
+
+                <p>Continue in English</p>
+
+            </div>
+
+            <button class="speaker-btn"
+    data-language="English"
+    data-code="en-IN" >🔊</button>
+
+        </div>
+
+        <div class="language-card" data-language="தமிழ்" data-code="ta-IN">
+
+            <div>
+
+                <h2>தமிழ்</h2>
+
+                <p>தமிழில் தொடரவும்</p>
+
+            </div>
+
+            <button class="speaker-btn"
+data-language="தமிழ்"
+data-code="ta-IN" >🔊</button>
+
+        </div>
+
+        <div class="language-card" data-language="हिन्दी" data-code="hi-IN">
+
+            <div>
+
+                <h2>हिन्दी</h2>
+
+                <p>हिन्दी में जारी रखें</p>
+
+            </div>
+
+            <button class="speaker-btn"
+data-language="हिन्दी"
+data-code="hi-IN">🔊</button>
+
+        </div>
+
+        <div class="language-card" data-language="తెలుగు" data-code="te-IN">
+
+            <div>
+
+                <h2>తెలుగు</h2>
+
+                <p>తెలుగులో కొనసాగండి</p>
+
+            </div>
+
+            <button class="speaker-btn"
+    data-language="తెలుగు"
+    data-code="te-IN">🔊</button>
+
+        </div>
+
+        <div class="language-card" data-language="ಕನ್ನಡ" data-code="kn-IN">
+
+            <div>
+
+                <h2>ಕನ್ನಡ</h2>
+
+                <p>ಕನ್ನಡದಲ್ಲಿ ಮುಂದುವರಿಯಿರಿ</p>
+
+            </div>
+
+            <button class="speaker-btn"
+    data-language="ಕನ್ನಡ"
+    data-code="kn-IN">🔊</button>
+
+        </div>
+
+        <div class="language-card" data-language="മലയാളം"
+    data-code="ml-IN">
+
+            <div>
+
+                <h2>മലയാളം</h2>
+
+                <p>മലയാളത്തിൽ തുടരുക</p>
+
+            </div>
+
+            <button class="speaker-btn"
+    data-language="മലയാളം"
+    data-code="ml-IN">🔊</button>
+
+        </div>
+
+        <div class="language-card" data-language="मराठी"
+    data-code="mr-IN">
+
+            <div>
+
+                <h2>मराठी</h2>
+
+                <p>मराठीत सुरू ठेवा</p>
+
+            </div>
+
+            <button class="speaker-btn"
+    data-language="मराठी"
+    data-code="mr-IN">>🔊</button>
+
+        </div>
+
+        <div class="language-card" data-language="বাংলা"
+    data-code="bn-IN">
+
+            <div>
+
+                <h2>বাংলা</h2>
+
+                <p>বাংলায় চালিয়ে যান</p>
+
+            </div>
+
+            <button class="speaker-btn"
+    data-language="বাংলা"
+    data-code="bn-IN">🔊</button>
+
+        </div>
+
+    </div>
+
+    <p class="version">
+
+        Version 1.0
+
+    </p>
+
+</div>
+
+<div id="toast" class="toast"></div>
+<script src="../translations/common-text.js"></script>
+
+<script src="../translations/language-text.js"></script>
+
+<script src="../js/i18n.js"></script>
+
+<script>
+translatePage(languageText);
+</script>
+
+<script src="../js/language.js"></script>
+</body>
+
+</html>

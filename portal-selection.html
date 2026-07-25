@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Choose Your Role | SilicoHelp</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/portal-selection.css">
+    <link rel="stylesheet" href="../css/animations.css">
+
+</head>
+
+<body>
+
+<div class="portal-container">
+
+    <img src="../assets/logo/silicohelp-logo.png"
+         class="portal-logo"
+         alt="SilicoHelp Logo">
+
+    <h1 data-i18n="portalTitle"></h1>
+
+    <p class="portal-subtitle"
+data-i18n="portalSubtitle"></p>
+
+    <div class="portal-grid">
+
+        <!-- Worker -->
+
+        <div class="portal-card worker-card"
+             onclick="goWorker()">
+
+            <div class="portal-icon">
+                👷
+            </div>
+
+            <h2 data-i18n="workerPortal"></h2>
+
+            <p data-i18n="workerDescription"></p>
+
+        </div>
+
+        <!-- Doctor -->
+
+        <div class="portal-card doctor-card"
+             onclick="goDoctor()">
+
+            <div class="portal-icon">
+                🩺
+            </div>
+
+            <h2 data-i18n="doctorPortal"></h2>
+
+            <p data-i18n="doctorDescription"></p>
+
+        </div>
+
+        <!-- Government -->
+
+        <div class="portal-card government-card"
+             onclick="goGovernment()">
+
+            <div class="portal-icon">
+                🏛️
+            </div>
+
+            <h2 data-i18n="governmentPortal"></h2>
+
+            <p data-i18n="governmentDescription"></p>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="../translations/common-text.js"></script>
+<script src="../translations/portal-text.js"></script>
+
+<script src="../js/i18n.js"></script>
+
+<script>
+translatePage(portalText);
+</script>
+
+<script src="../js/portal-selection.js"></script>
+
+</body>
+
+</html>

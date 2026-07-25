@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>OTP Verification</title>
+
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/otp.css">
+<link rel="stylesheet" href="../css/animations.css">
+
+</head>
+
+<body>
+
+<div class="otp-container">
+
+<img src="../assets/logo/silicohelp-logo.png"
+class="otp-logo"
+alt="SilicoHelp">
+
+<h1 data-i18n="title">
+Verify Mobile Number
+</h1>
+
+<p
+class="otp-subtitle"
+data-i18n="subtitle">
+
+Enter the 6-digit OTP sent to your mobile number.
+
+</p>
+
+<p id="mobileNumber"></p>
+
+<div class="otp-boxes">
+
+<input class="otp-input" maxlength="1">
+<input class="otp-input" maxlength="1">
+<input class="otp-input" maxlength="1">
+<input class="otp-input" maxlength="1">
+<input class="otp-input" maxlength="1">
+<input class="otp-input" maxlength="1">
+
+</div>
+
+<button
+id="verifyBtn"
+data-i18n="verify">
+
+Verify OTP
+
+</button>
+
+<p class="timer">
+
+<span data-i18n="resend">
+Resend OTP
+</span>
+
+in
+
+<span id="countdown">30</span>s
+
+</p>
+
+<button
+id="changeMobile"
+data-i18n="changeNumber">
+
+← Change Mobile Number
+
+</button>
+
+</div>
+
+<script src="../translations/common-text.js"></script>
+
+<script src="../translations/otp-text.js"></script>
+
+<script src="../js/i18n.js"></script>
+
+<script>
+translatePage(otpText);
+</script>
+
+<script type="module" src="../js/otp.js"></script>
+
+</body>
+
+</html>

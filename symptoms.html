@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Symptoms Assessment | SilicoHelp</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/symptoms.css">
+    <link rel="stylesheet" href="../css/progress.css">
+    <link rel="stylesheet" href="../css/animations.css">
+
+</head>
+
+<body data-step="3">
+
+<div class="symptoms-container">
+
+    <img src="../assets/logo/silicohelp-logo.png"
+         class="symptoms-logo">
+
+    <h1 data-i18n="title">
+Symptoms Assessment
+</h1>
+
+    <p class="subtitle" data-i18n="subtitle">
+    Tell us about your current health condition.
+</p>
+
+    <div class="progress-container">
+
+    <div class="progress-title">
+        <h3 id="stepText">Step 1 of 5</h3>
+    </div>
+
+    <div class="stepper">
+
+        <div class="step">
+            <div class="circle">1</div>
+            <span>Basic Details</span>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="step">
+            <div class="circle">2</div>
+            <span>Work History</span>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="step">
+            <div class="circle">3</div>
+            <span>Symptoms</span>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="step">
+            <div class="circle">4</div>
+            <span>X-ray</span>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="step">
+            <div class="circle">5</div>
+            <span>AI Result</span>
+        </div>
+
+    </div>
+
+</div>
+
+    <div class="symptoms-card">
+
+    <!-- Questions will go here -->
+    <label data-i18n="cough">
+Persistent cough (more than 3 weeks)
+</label>
+
+<div class="radio-group">
+
+<label>
+<input type="radio" name="cough" value="Yes">
+<span data-i18n="yes">Yes</span>
+</label>
+<label>
+<input type="radio" name="cough" value="No">
+<span data-i18n="no">No</span>
+</label>
+
+</div>
+
+<label data-i18n="breathlessness">
+Shortness of breath
+</label>
+
+<div class="radio-group">
+
+<label>
+<input type="radio" name="breath" value="Yes">
+<span data-i18n="yes">Yes</span>
+</label>
+<label>
+<input type="radio" name="breath" value="No">
+<span data-i18n="no">No</span>
+</label>
+
+</div>
+
+<label data-i18n="chestPain">
+Chest pain
+</label>
+
+<div class="radio-group">
+
+<label>
+<input type="radio" name="chest" value="Yes">
+<span data-i18n="yes">Yes</span>
+</label>
+
+<label>
+<input type="radio" name="chest" value="No">
+<span data-i18n="no">No</span>
+</label>
+
+</div>
+
+<label data-i18n="fever">
+Frequent fever
+</label>
+<div class="radio-group">
+
+<label>
+<input type="radio" name="fever" value="Yes">
+<span data-i18n="yes">Yes</span>
+</label>
+
+<label>
+<input type="radio" name="fever" value="No">
+<span data-i18n="no">No</span>
+</label>
+</div>
+
+<label data-i18n="weightLoss">
+Weight loss
+</label>
+
+<div class="radio-group">
+
+<label>
+<input type="radio" name="weight" value="Yes">
+<span data-i18n="yes">Yes</span>
+</label>
+
+<label>
+<input type="radio" name="weight" value="No">
+<span data-i18n="no">No</span>
+</label>
+</div>
+
+<label data-i18n="fatigue">
+Fatigue / Weakness
+</label>
+
+<div class="radio-group">
+
+<label>
+<input type="radio" name="fatigue" value="Yes">
+<span data-i18n="yes">Yes</span>
+</label>
+
+<label>
+<input type="radio" name="fatigue" value="No">
+<span data-i18n="no">No</span>
+</label>
+
+</div>
+
+<label data-i18n="blood">
+Coughing up blood
+</label>
+
+<div class="radio-group">
+
+<label>
+<input type="radio" name="blood" value="Yes">
+<span data-i18n="yes">Yes</span>
+</label>
+
+<label>
+<input type="radio" name="blood" value="No">
+<span data-i18n="no">No</span>
+</label>
+
+</div>
+
+<label data-i18n="workDifficulty">
+Difficulty while working
+</label>
+<div class="radio-group">
+
+<label>
+<input type="radio" name="work" value="Yes">
+<span data-i18n="yes">Yes</span>
+</label>
+
+<label>
+<input type="radio" name="work" value="No">
+<span data-i18n="no">No</span>
+</label>
+</div>
+
+<label data-i18n="duration">
+Symptoms Duration
+</label>
+<select id="duration">
+</select>
+
+<label data-i18n="smoking">
+Smoking History
+</label>
+
+<select id="smoking">
+</select>
+
+<p id="symptomCount">
+
+<span data-i18n="symptomCount">
+
+Symptoms Reported:
+
+</span>
+
+0 / 8
+
+</p>
+
+<button
+id="continueBtn"
+data-i18n="continue">
+
+Continue
+
+</button>
+    </div>
+
+</div>
+
+<script src="../translations/common-text.js"></script>
+
+<script src="../translations/symptoms-text.js"></script>
+<script src="../translations/dropdowns-text.js"></script>
+<script src="../js/progress.js"></script>
+<script src="../js/i18n.js"></script>
+
+<script>
+translatePage(symptomsText);
+</script>
+
+<script src="../js/symptoms.js"></script>
+</body>
+</html>
