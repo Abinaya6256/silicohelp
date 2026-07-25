@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compensation Processing | SilicoHelp</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/compensation.css">
+    <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="header">
+
+    <a href="govdashboard.html" class="back-btn">
+        <i class="fa-solid fa-arrow-left"></i>
+        Back to Dashboard
+    </a>
+
+    <h1>Compensation Processing</h1>
+
+    <p>Review worker claim before approving compensation.</p>
+
+</div>
+    <div class="card">
+
+        <h2>Claim Information</h2>
+
+        <div class="grid">
+
+            <div class="item">
+                <label>Claim ID</label>
+                <span id="claimId">SH-2026-0001</span>
+            </div>
+
+            <div class="item">
+                <label>Status</label>
+                <span id="claimStatus" class="status pending">Pending</span>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="card">
+
+        <h2>Worker Details</h2>
+
+        <div class="grid">
+
+            <div class="item">
+                <label>Name</label>
+                <span id="workerName">Raj Kumar</span>
+            </div>
+
+            <div class="item">
+                <label>Age</label>
+                <span id="workerAge">45</span>
+            </div>
+
+            <div class="item">
+                <label>Occupation</label>
+                <span id="occupation">Stone Crusher</span>
+            </div>
+
+            <div class="item">
+                <label>Aadhaar</label>
+                <span id="aadhaar">XXXX-XXXX-4567</span>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="card">
+
+        <h2>Medical Report</h2>
+
+        <div class="grid">
+
+            <div class="item">
+                <label>AI Diagnosis</label>
+                <span id="aiDiagnosis">Silicosis</span>
+            </div>
+
+            <div class="item">
+                <label>Confidence</label>
+                <span id="confidence">96%</span>
+            </div>
+
+            <div class="item">
+                <label>Doctor Diagnosis</label>
+                <span id="doctorDiagnosis">Silicosis</span>
+            </div>
+
+            <div class="item">
+                <label>Doctor Remarks</label>
+                <span id="remarks">Eligible for compensation.</span>
+            </div>
+
+        </div>
+
+    </div>
+
+<div class="card">
+
+    <h2>Compensation Details</h2>
+
+    <div class="grid">
+
+        <div class="item">
+            <label>Compensation Amount (₹)</label>
+
+            <input
+                type="number"
+                id="compensationAmount"
+                class="amount-input"
+                value="400000"
+                min="0"
+                step="1000"
+            >
+        </div>
+
+        <div class="item">
+            <label>Reason</label>
+
+            <input
+                type="text"
+                id="compensationReason"
+                value="Confirmed Silicosis"
+            >
+        </div>
+
+    </div>
+
+</div>
+
+    <div class="card">
+
+        <h2>Officer Remarks</h2>
+
+        <textarea
+            id="govRemarks"
+            placeholder="Enter remarks..."></textarea>
+
+    </div>
+
+    <div class="actions">
+
+        <button id="rejectBtn" class="reject">
+            Reject Claim
+        </button>
+
+        <button id="approveBtn" class="approve">
+            Approve Compensation
+        </button>
+
+    </div>
+
+</div>
+
+<script type="module" src="../js/compensation.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,231 @@
+.login-page{
+
+    min-height:100vh;
+
+    display:flex;
+
+    font-family:'Poppins',sans-serif;
+
+    background:linear-gradient(135deg,#F8FAFC,#EAF6FF);
+
+}
+
+/* LEFT PANEL */
+
+.left-panel{
+
+    width:45%;
+
+    background:linear-gradient(135deg,#2563EB,#0F6CBD);
+
+    color:white;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:50px;
+
+    text-align:center;
+
+}
+
+.login-logo{
+
+    width:160px;
+
+    margin-bottom:30px;
+
+}
+
+.left-panel h1{
+
+    font-size:38px;
+
+    margin-bottom:20px;
+
+}
+
+.left-panel p{
+
+    max-width:420px;
+
+    line-height:1.8;
+
+    opacity:.95;
+
+}
+
+/* RIGHT PANEL */
+
+.right-panel{
+
+    flex:1;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:40px;
+
+}
+
+.login-card{
+
+    background:white;
+
+    width:100%;
+
+    max-width:420px;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    box-shadow:var(--shadow);
+
+}
+
+.login-card h2{
+
+    color:var(--primary);
+
+    margin-bottom:10px;
+
+}
+
+.login-card p{
+
+    color:var(--light-text);
+
+    margin-bottom:30px;
+
+}
+
+/* INPUT */
+
+.input-box{
+
+    display:flex;
+
+    align-items:center;
+
+    background:#F8FAFC;
+
+    border:1px solid #D1D5DB;
+
+    border-radius:12px;
+
+    padding:14px;
+
+    margin-bottom:20px;
+
+}
+
+.input-box i{
+
+    color:var(--primary);
+
+    font-size:20px;
+
+    margin-right:12px;
+
+}
+
+.input-box input{
+
+    border:none;
+
+    outline:none;
+
+    background:transparent;
+
+    width:100%;
+
+    font-size:16px;
+
+}
+
+/* BUTTON */
+
+.login-btn{
+
+    display:block;
+
+    width:100%;
+
+    padding:16px;
+
+    background:var(--primary);
+
+    color:white;
+
+    border-radius:14px;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    margin-top:10px;
+
+    transition:.3s;
+
+}
+
+.login-btn:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:0 12px 25px rgba(37,99,235,.25);
+
+}
+
+/* BACK */
+
+.back-home{
+
+    display:block;
+
+    text-align:center;
+
+    margin-top:25px;
+
+    color:var(--primary);
+
+    text-decoration:none;
+
+    font-weight:500;
+
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+.login-page{
+
+flex-direction:column;
+
+}
+
+.left-panel{
+
+width:100%;
+
+padding:40px 20px;
+
+}
+
+.right-panel{
+
+padding:30px 20px;
+
+}
+
+}

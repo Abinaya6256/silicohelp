@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Login | SilicoHelp</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/doctor-login.css"
+</head>
+
+<body>
+
+<div class="login-page">
+
+    <!-- Left Side -->
+    <div class="left-panel">
+
+        <h1 data-i18n="welcomeBack"></h1>
+        <p data-i18n="leftDescription"></p>
+
+    </div>
+
+    <!-- Right Side -->
+    <div class="right-panel">
+
+        <div class="login-card">
+
+            <h2 data-i18n="doctorLogin"></h2>
+
+            <p data-i18n="signIn"></p>
+
+            <div class="input-box">
+                <i class="bi bi-envelope"></i>
+                <input type="email" data-i18n-placeholder="emailPlaceholder">
+            </div>
+
+            <div class="input-box">
+                <i class="bi bi-lock"></i>
+                <input type="password" data-i18n-placeholder="passwordPlaceholder">
+            </div>
+
+            <a href="docdashboard.html" class="login-btn">
+    <span data-i18n="login"></span>
+</a>
+
+            <a href="../index.html" class="back-home">
+                <span data-i18n="backHome"></span>
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+<script src="../translations/common-text.js"></script>
+<script src="../translations/doctor-login-text.js"></script>
+<script src="../js/i18n.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    translatePage(doctorLoginText);
+});
+</script>
+
+<script src="../js/doctor-login.js"></script>
+</body>
+</html>

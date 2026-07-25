@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Case Review | SilicoHelp</title>
+
+    <link rel="stylesheet" href="../css/case.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <div class="layout">
+
+        <!-- Sidebar -->
+
+        <aside class="sidebar">
+
+            <div class="logo-section">
+
+                <img src="../assets/logo.png" class="logo">
+
+                <h2>SilicoHelp</h2>
+
+            </div>
+
+            <nav>
+
+                <a href="dashboard.html">
+                    <i class="fa-solid fa-house"></i>
+                    Dashboard
+                </a>
+
+                <a class="active">
+                    <i class="fa-solid fa-folder-open"></i>
+                    Review Cases
+                </a>
+
+                <a>
+                    <i class="fa-solid fa-file-medical"></i>
+                    Claims
+                </a>
+
+                <a>
+                    <i class="fa-solid fa-chart-line"></i>
+                    Analytics
+                </a>
+
+                <a>
+                    <i class="fa-solid fa-gear"></i>
+                    Settings
+                </a>
+
+                <a href="../index.html">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    Logout
+                </a>
+
+            </nav>
+
+        </aside>
+
+        <!-- Main Content -->
+
+        <main class="content">
+
+            <header class="topbar">
+
+                <div>
+
+                    <h1>Worker Case Review</h1>
+
+                    <p>Review AI diagnosis before approval</p>
+
+                </div>
+
+                <a href="dashboard.html" class="backbtn">
+
+                    <i class="fa-solid fa-arrow-left"></i>
+
+                    Dashboard
+
+                </a>
+
+            </header>
+
+            <div class="status-bar">
+
+                <span class="status pending">
+
+                    <i class="fa-solid fa-circle"></i>
+
+                    Pending Review
+
+                </span>
+
+                <p>
+
+                    Submitted :
+
+                    <strong id="submittedDate">
+
+                        14 July 2026 | 10:42 AM
+
+                    </strong>
+
+                </p>
+
+            </div>
+
+            <div class="grid">
+
+                <!-- Worker Information -->
+
+                <div class="card">
+
+                    <h2>
+
+                        <i class="fa-solid fa-user"></i>
+
+                        Worker Information
+
+                    </h2>
+
+                    <table>
+
+                        <tr>
+                          <td><b>Case ID</b></td>
+                          <td id="caseID">CASE-2026-001</td>
+                        </tr>
+
+                        <tr>
+                          <td><b>Worker ID</b></td>
+                          <td id="workerID">W001</td>
+                        </tr>
+
+                        <tr>
+                            <td><b>Name</b></td>
+                            <td id="workerName">Ravi Kumar</td>
+                        </tr>
+
+                        <tr>
+                            <td><b>Age</b></td>
+                            <td id="workerAge">42</td>
+                        </tr>
+
+                        <tr>
+                            <td><b>Aadhaar</b></td>
+                            <td id="aadhaar">XXXX XXXX 4582</td>
+                        </tr>
+
+                        <tr>
+                            <td><b>Phone</b></td>
+                            <td id="phone">9876543210</td>
+                        </tr>
+
+                        <tr>
+                            <td><b>District</b></td>
+                            <td id="district">Salem</td>
+                        </tr>
+
+                        <tr>
+                            <td><b>Job Type</b></td>
+                            <td id="jobtype">Stone Crusher</td>
+                        </tr>
+                        <tr>
+                            <td><b>Workplace</b></td>
+                            <td id="workplacename">ABC Stone Quarry</td>
+                        </tr>
+
+                        <tr>
+                            <td><b>Years Worked</b></td>
+                            <td id="yearsWorked">18 Years</td>
+                        </tr>
+
+                        <tr>
+                            <td><b>Dusr Exposure Level</b></td>
+                            <td id="dustexposureLevel">High</td>
+                        </tr>
+                        <tr>
+                            <td><b>Mask Usage</b></td>
+                            <td id="maskUsage">Ocaacasionally</td>
+                        </tr>
+
+                        <tr>
+                            <td><b>Exposure Score</b></td>
+                            <td id="exposureScore">87 / 100</td>
+                        </tr>
+
+                    </table>
+
+                </div>
+                <!-- Chest X-Ray -->
+
+                <div class="card">
+
+                    <h2>
+                        <i class="fa-solid fa-x-ray"></i>
+                        Chest X-Ray
+                    </h2>
+
+                    <img
+                        id="xrayImage"
+                        src="../assets/sample-xray.jpg"
+                        alt="Chest X-Ray"
+                        class="medical-image">
+
+                </div>
+
+                <!-- AI Diagnosis -->
+
+                <div class="card">
+
+                    <h2>
+                        <i class="fa-solid fa-robot"></i>
+                        AI Diagnosis
+                    </h2>
+
+                    <h1 id="prediction" class="prediction">
+                        Silicosis
+                    </h1>
+
+                    <p>
+
+                        Confidence :
+
+                        <strong id="confidence">
+
+                            96%
+
+                        </strong>
+
+                    </p>
+
+                    <div class="progress">
+
+                        <div
+                            id="confidenceBar"
+                            class="bar"
+                            style="width:96%;">
+
+                            96%
+
+                        </div>
+
+                    </div>
+
+                    <div class="badges">
+
+                        <span
+                            id="riskBadge"
+                            class="badge danger">
+
+                            High Risk
+
+                        </span>
+
+                        <span
+                            id="eligibilityBadge"
+                            class="badge success">
+
+                            Eligible for Compensation
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <div class="card">
+
+                 <h2>
+                   <i class="fa-solid fa-microscope"></i>
+                   AI Findings
+                 </h2>
+
+                 <ul id="aiFindings" class="symptoms">
+
+                  <li>Bilateral upper lobe nodules detected</li>
+
+                  <li>Pattern consistent with Silicosis</li>
+
+                  <li>Recommend pulmonologist review</li>
+
+                 </ul>
+
+                </div>
+
+                <!-- Heatmap -->
+
+                <div class="card">
+
+                    <h2>
+
+                        <i class="fa-solid fa-fire"></i>
+
+                        AI Heatmap
+
+                    </h2>
+
+                    <img
+                        id="heatmapImage"
+                        src="../assets/heatmap.png"
+                        alt="Heatmap"
+                        class="medical-image">
+
+                    <p class="note">
+
+                        Red highlighted regions influenced the AI prediction.
+
+                    </p>
+
+                </div>
+
+                <!-- Symptoms -->
+
+                <div class="card">
+
+                    <h2>
+
+                        <i class="fa-solid fa-notes-medical"></i>
+
+                        Symptoms Summary
+
+                    </h2>
+
+                    <ul class="symptoms">
+
+                        <li>Persistent cough</li>
+
+                        <li>Breathlessness</li>
+
+                        <li>Chest pain</li>
+
+                        <li>Fatigue</li>
+
+                        <li>Weight Loss</li>
+
+                    </ul>
+
+                </div>
+
+                <!-- Doctor Information -->
+
+                <div class="card">
+
+                    <h2>
+
+                        <i class="fa-solid fa-user-doctor"></i>
+
+                        Doctor Information
+
+                    </h2>
+
+                    <p>
+                     <strong>Name :</strong>
+                     <span id="doctorNameCard">--</span>
+                    </p>
+
+                    <p>
+                     <strong>Department :</strong>
+                     <span id="doctorDepartmentCard">--</span>
+                    </p>
+
+                    <p>
+                       <strong>Registration No :</strong>
+                       <span id="doctorRegCard">--</span>
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- Doctor Review -->
+
+            <div class="doctor-card">
+
+                <h2>
+
+                    Doctor Review
+
+                </h2>
+
+                <label>
+
+                    Medical Remarks
+
+                </label>
+
+                <textarea
+                    id="doctorremarks"
+                    placeholder="Enter your medical remarks here..."></textarea>
+
+                <label>
+
+                    Reason for Rejection (Optional)
+
+                </label>
+
+                <textarea
+                    id="rejectReason"
+                    placeholder="Mention reason only if rejecting the case..."></textarea>
+                
+                <label>
+                  Reviewing Doctor
+                </label>
+
+                <select id="doctorSelect">
+                  <option value=""disabled selected>Select Doctor</option>
+
+                  <option
+                     data-hospital="Government Occupational Health Centre"
+                     data-reg="MCI-458721"
+                     data-department="Pulmonology"
+                     value="Dr. Priya Sharma">
+                     Dr. Priya Sharma
+                  </option>
+
+                  <option
+                     data-hospital="Government Occupational Health Centre"
+                     data-reg="MCI-458722"
+                     data-department="Chest Physician"
+                     value="Dr. Arjun Mehta">
+                     Dr. Arjun Mehta
+                  </option>
+
+                  <option
+                      data-hospital="Government Occupational Health Centre"
+                     data-reg="MCI-458723"
+                     data-department="Occupational Medicine"
+                     value="Dr. Ananya Rao">
+                     Dr. Ananya Rao
+                  </option>
+
+                  <option
+                     data-hospital="Government Occupational Health Centre"
+                      data-reg="MCI-458724"
+                      data-department="Respiratory Consultant"
+                      value="Dr. Vikram Nair">
+                     Dr. Vikram Nair
+                  </option>
+
+                  <option
+                      data-hospital="Government Occupational Health Centre"
+                      data-reg="MCI-458725"
+                      data-department="Pulmonology"
+                      value="Dr. Neha Iyer">
+                      Dr. Neha Iyer
+                  </option>
+                </select>
+
+                <label>
+
+                    Digital Signature
+
+                </label>
+
+                <input
+                    id="signature"
+                    type="text"
+                    placeholder="Doctor Digital Signature">
+
+                <div class="buttons">
+
+                    <button
+                        id="rejectBtn"
+                        class="reject">
+
+                        Reject Case
+
+                    </button>
+
+                    <button
+                        id="approveBtn"
+                        class="approve">
+
+                        Approve Case
+
+                    </button>
+
+                    <button
+                        id="claimBtn"
+                        class="claim"
+                        disabled>
+
+                        Generate Claim
+
+                    </button>
+
+                </div>
+
+            </div>
+            <!-- Outcome Branching -->
+
+            <div class="card outcome">
+
+                <h2>
+
+                    <i class="fa-solid fa-route"></i>
+
+                    Outcome Branching
+
+                </h2>
+
+                <div id="outcomeMessage">
+
+                    <p>Waiting for Doctor Decision...</p>
+
+                    <ul>
+
+                        <li>✔ Review AI prediction</li>
+
+                        <li>✔ Verify worker details</li>
+
+                        <li>✔ Add remarks</li>
+
+                        <li>✔ Approve or Reject the case</li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </main>
+
+    </div>
+
+    <!-- JavaScript -->
+
+<script type="module" src="../js/case.js"></script>
+
+</body>
+
+</html>

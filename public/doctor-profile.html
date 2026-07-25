@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Doctor Profile</title>
+
+<link rel="stylesheet" href="../css/doctor-profile.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+<body>
+
+<div class="profile-container">
+
+    <!-- Profile Card -->
+    <div class="profile-card">
+
+        <div class="image-area">
+            <img src="../assets/images/default-doctor.png" id="profileImage">
+
+            <label for="imageInput" class="upload-btn">
+                <i class="fa-solid fa-camera"></i>
+            </label>
+
+            <input type="file" id="imageInput" accept="image/*">
+        </div>
+
+        <h2 id="doctorName">Dr. John Smith</h2>
+
+        <p id="doctorEmail">
+            doctor@gmail.com
+        </p>
+
+        <textarea
+        id="doctorBio"
+        placeholder="Write something about yourself..."></textarea>
+
+        <button id="saveProfile">
+            Save Profile
+        </button>
+
+    </div>
+
+
+    <!-- Right Section -->
+
+    <div class="right-section">
+
+        <h2>Professional Statistics</h2>
+
+        <div class="stats">
+
+            <button class="stat-btn" id="totalBtn">
+                <h1 id="totalCases">0</h1>
+                <p>Total Cases</p>
+            </button>
+
+            <button class="stat-btn approved" id="approvedBtn">
+                <h1 id="approvedCases">0</h1>
+                <p>Approved</p>
+            </button>
+
+            <button class="stat-btn rejected" id="rejectedBtn">
+                <h1 id="rejectedCases">0</h1>
+                <p>Rejected</p>
+            </button>
+
+        </div>
+
+        <div class="extra">
+
+            <div class="info-box">
+                <h3>Specialization</h3>
+                <input
+                id="specialization"
+                placeholder="Pulmonologist">
+            </div>
+
+            <div class="info-box">
+                <h3>Hospital</h3>
+                <input
+                id="hospital"
+                placeholder="Government Hospital">
+            </div>
+
+            <div class="info-box">
+                <h3>Experience</h3>
+                <input
+                id="experience"
+                placeholder="10 Years">
+            </div>
+
+            <div class="info-box">
+                <h3>Medical Registration No.</h3>
+                <input
+                id="registration"
+                placeholder="TNMC12345">
+            </div>
+
+        </div>
+
+        <div class="list-area">
+
+            <h2 id="listTitle">
+                Cases
+            </h2>
+
+            <table>
+
+                <thead>
+
+                <tr>
+                    <th>Case ID</th>
+                    <th>Worker</th>
+                    <th>AI Result</th>
+                    <th>Status</th>
+                </tr>
+
+                </thead>
+
+                <tbody id="caseTable">
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script type="module" src="../js/doctor-profile.js"></script>
+
+</body>
+</html>

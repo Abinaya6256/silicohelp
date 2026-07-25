@@ -1,0 +1,122 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#F8FAFC;
+    color:#1E293B;
+}
+
+.container{
+    max-width:1000px;
+    margin:40px auto;
+    padding:20px;
+}
+
+header{
+    text-align:center;
+    margin-bottom:35px;
+}
+
+header h1{
+    color:#0F62FE;
+    margin-bottom:10px;
+}
+
+header p{
+    color:#64748B;
+}
+
+.claim-card{
+    background:white;
+    border-radius:16px;
+    padding:25px;
+    margin-bottom:25px;
+    box-shadow:0 8px 20px rgba(15,98,254,.08);
+}
+
+.claim-card h2{
+    color:#0F62FE;
+    margin-bottom:20px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+td{
+    padding:14px;
+    border-bottom:1px solid #E5E7EB;
+}
+
+td:first-child{
+    font-weight:600;
+    width:40%;
+}
+
+.buttons{
+    display:flex;
+    gap:15px;
+    justify-content:center;
+    flex-wrap:wrap;
+    margin-top:35px;
+}
+
+.buttons button{
+    padding:14px 24px;
+    border:none;
+    border-radius:12px;
+    color:white;
+    cursor:pointer;
+    font-size:15px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.download{
+    background:#DC2626;
+}
+
+.download:hover{
+    background:#B91C1C;
+}
+
+.submit{
+    background:#16A34A;
+}
+
+.submit:hover{
+    background:#15803D;
+}
+
+.back{
+    background:#64748B;
+}
+
+.back:hover{
+    background:#475569;
+}
+
+a{
+    text-decoration:none;
+}
+
+@media(max-width:768px){
+
+.container{
+    padding:15px;
+}
+
+.buttons{
+    flex-direction:column;
+}
+
+.buttons button{
+    width:100%;
+}
+
+}

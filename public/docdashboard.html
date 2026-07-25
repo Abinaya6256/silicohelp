@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Doctor Dashboard</title>
+
+    <link rel="stylesheet" href="../css/dashboard.css">
+
+    <!-- Fonts -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+
+            <img src="../assets/logo/silicohelp-logo.png">
+
+        </div>
+
+        <ul>
+
+    <li class="active"
+        onclick="window.location.href='doctor-dashboard.html'">
+
+        <i class="fa-solid fa-house"></i>
+
+        Dashboard
+
+    </li>
+
+    <li
+        onclick="window.location.href='doctor-cases.html'">
+
+        <i class="fa-solid fa-folder-open"></i>
+
+        Cases
+
+    </li>
+
+    <li
+        onclick="window.location.href='doctor-profile.html'">
+
+        <i class="fa-solid fa-user-doctor"></i>
+
+        Profile
+
+    </li>
+
+    <li>
+    <a href="logout.html" class="sidebar-link">
+        <i class="fa-solid fa-right-from-bracket"></i>
+        <span>Logout</span>
+    </a>
+</li>
+
+</ul>    
+
+    </aside>
+
+    <!-- Main -->
+
+    <main class="main-content">
+
+        <header>
+
+            <div>
+
+                <h1>Doctor Dashboard</h1>
+
+                <p>Welcome back, Doctor.</p>
+
+            </div>
+
+            <button>
+
+                Pending Reviews
+
+            </button>
+
+        </header>
+
+        <!-- Stats -->
+
+<section class="stats">
+
+    <div class="stat-card">
+
+        <i class="fa-solid fa-clock"></i>
+
+        <div>
+
+            <h2>12</h2>
+
+            <p>Pending Reviews</p>
+
+        </div>
+
+    </div>
+
+    <div class="stat-card">
+
+        <i class="fa-solid fa-circle-check"></i>
+
+        <div>
+
+            <h2>8</h2>
+
+            <p>Approved</p>
+
+        </div>
+
+    </div>
+
+    <div class="stat-card">
+
+        <i class="fa-solid fa-xmark"></i>
+
+        <div>
+
+            <h2>2</h2>
+
+            <p>Rejected</p>
+
+        </div>
+
+    </div>
+
+    <div class="stat-card">
+
+        <i class="fa-solid fa-file-medical"></i>
+
+        <div>
+
+            <h2>22</h2>
+
+            <p>Total Cases</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Search -->
+
+<section class="toolbar">
+
+    <input type="text" placeholder="Search Case ID / Worker Name...">
+
+    <select>
+
+        <option>All Cases</option>
+
+        <option>Pending Review</option>
+
+        <option>Approved</option>
+
+        <option>Rejected</option>
+
+    </select>
+
+</section>
+
+<!-- Cases Table -->
+
+<section class="table-container">
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Case ID</th>
+
+<th>Worker ID</th>
+
+<th>Name</th>
+
+<th>AI Result</th>
+
+<th>Confidence</th>
+
+<th>Status</th>
+
+<th>Action</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>CASE-2026-001</td>
+
+<td>W001</td>
+
+<td>Ravi Kumar</td>
+
+<td>Silicosis</td>
+
+<td>96%</td>
+
+<td><span class="pending">Pending</span></td>
+
+<td>
+
+<a href="case.html">
+
+<button class="review-btn">
+
+Review
+
+</button>
+
+</a>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>CASE-2026-002</td>
+
+<td>W002</td>
+
+<td>Suresh</td>
+
+<td>Tuberculosis</td>
+
+<td>94%</td>
+
+<td><span class="pending">Pending</span></td>
+
+<td>
+
+<a href="case.html">
+
+<button class="review-btn">
+
+Review
+
+</button>
+
+</a>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>CASE-2026-003</td>
+
+<td>W003</td>
+
+<td>Rahul</td>
+
+<td>Normal</td>
+
+<td>99%</td>
+
+<td><span class="approved">Approved</span></td>
+
+<td>
+
+<a href="case.html">
+
+<button class="review-btn">
+
+View
+
+</button>
+
+</a>
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</section>
+
+    </main>
+
+</div>
+
+<script type="module" src="../js/doctor.js"></script>
+</body>
+
+</html>
